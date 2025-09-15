@@ -80,7 +80,7 @@ describe('ServeRest API', () => {
 				.withHeaders('Authorization', token)
 				.withHeaders('monitor', false)
 				.withJson({
-					nome: `${faker.commerce.productName()} ${faker.string.uuid()}`,
+					nome: `${faker.commerce.productName()} ${faker.string.uuid()}`, // Linha corrigida
 					preco: 500,
 					descricao: faker.commerce.productDescription(),
 					quantidade: 10
